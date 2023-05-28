@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>KFH PHOTO EDITOR</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>KFH PHOTO EDITOR</h1>
+            <div class="input-container">
+            <label for="inputImage" class="upload-button">Examinar</label>
+            <input type="file" id="inputImage" accept="image/*">
+            </div>
+            <div class="buttons-container">
+            <select id="filterSelect">
+                <option value="none">Ninguno</option>
+                <option value="grayscale">Escala de grises</option>
+                <option value="sepia">Sepia</option>
+                <option value="blur">Desenfoque</option>
+                <option value="saturate">Saturación</option>
+                <option value="invert">Invertir colores</option>
+                <option value="brightness">Brillo</option>
+                <option value="contrast">Contraste</option>
+            </select>
+            <button id="applyButton" class="button" disabled>Aplicar Efecto</button>
+            <button id="saveButton" class="button" disabled>Guardar Imagen</button>
+            </div>
+            <div id="imageContainer" class="image-preview"></div>
+        </div>
+    </body>
+</html>
